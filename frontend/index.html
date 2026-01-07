@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Ghost Hunt - Learn Python Through Gamification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <h1>👻 Python Ghost Hunt</h1>
+            <div class="player-stats">
+                <span class="xp">XP: <span id="xp-value">0</span></span>
+                <span class="tools">Tools: <span id="tools-count">0</span>/<span id="tools-total">5</span></span>
+            </div>
+        </div>
+        
+        <div class="game-content">
+            <!-- Left Panel: Learning & Code Editor -->
+            <div class="coding-panel">
+                <!-- Learning Content -->
+                <div class="learning-content">
+                    <h3 id="challenge-title">🎓 Stage 1: Print Statements</h3>
+                    <p id="challenge-lesson"></p>
+                    <p id="challenge-hint" style="color: #ffd700; margin-top: 1rem; padding: 0.75rem; background-color: #3e3e3e; border-radius: 4px;"></p>
+                </div>
+                
+                <!-- Code Editor -->
+                <div class="editor-section">
+                    <h3>Code Editor</h3>
+                    <textarea id="code-editor" class="code-textarea" spellcheck="false"># Write your Python code here
+print("Hello, Ghost Hunter!")</textarea>
+                    <div class="editor-controls">
+                        <button id="run-button" class="run-button">▶ Run Code</button>
+                    </div>
+                </div>
+                
+                <!-- Output Section -->
+                <div class="output-section">
+                    <h4>Output</h4>
+                    <div id="output-box" class="output-box">Output will appear here...</div>
+                </div>
+            </div>
+            
+            <!-- Right Panel: Game Scene -->
+            <div class="scene-panel">
+                <h3>🏚️ The Haunted Attic</h3>
+                <canvas id="scene-canvas" class="scene-canvas"></canvas>
+                <div class="tools-display">
+                    <div id="tools-list">
+                        <p>Complete coding challenges to unlock tools for ghost hunting!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

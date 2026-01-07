@@ -1,0 +1,39 @@
+.game-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #252526;
+  border-bottom: 2px solid #3e3e42;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.player-stats {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+.player-stats span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.game-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}

@@ -1,0 +1,54 @@
+.scene-panel {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  background-color: #1e1e1e;
+  padding: 1rem;
+}
+
+.scene-panel h3 {
+  margin: 0 0 1rem 0;
+  color: #4ec9b0;
+  font-size: 1.3rem;
+}
+
+.scene-canvas {
+  flex: 1;
+  background-color: #252526;
+  border: 2px solid #3e3e42;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.tools-display {
+  background-color: #252526;
+  border: 1px solid #3e3e42;
+  border-radius: 4px;
+  padding: 1rem;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.tools-display h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #4ec9b0;
+}
+
+.tools-display ul {
+  list-style-position: inside;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.tools-display li {
+  margin: 0.25rem 0;
+  color: #d4d4d4;
+}
+
+.tools-display p {
+  margin: 0;
+  color: #a0a0a0;
+  font-style: italic;
+}

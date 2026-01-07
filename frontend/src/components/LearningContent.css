@@ -1,0 +1,30 @@
+.learning-content {
+  background-color: #252526;
+  padding: 1.5rem;
+  border-bottom: 1px solid #3e3e42;
+}
+
+.learning-content h3 {
+  margin: 0 0 1rem 0;
+  color: #4ec9b0;
+  font-size: 1.1rem;
+}
+
+.learning-content p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.learning-content code {
+  background-color: #1e1e1e;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  color: #ce9178;
+  font-size: 0.9rem;
+}
+
+.learning-content strong {
+  color: #d4d4d4;
+}
