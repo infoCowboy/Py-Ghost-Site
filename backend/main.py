@@ -33,6 +33,12 @@ class CodeExecutionResponse(BaseModel):
     xp_reward: int = 0
 
 
+@app.get("/")
+def read_root():
+    """Health check endpoint"""
+    return {"status": "ok", "message": "Python Ghost Hunt API is running"}
+
+
 @app.post("/api/execute", response_model=CodeExecutionResponse)
 async def execute_code(request: CodeExecutionRequest):
     """
