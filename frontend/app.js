@@ -21,6 +21,8 @@ async function loadChallenge(challengeId) {
             return;
         }
         
+        console.log('Challenge loaded:', challenge);
+        
         // Update UI with challenge data
         document.getElementById('challenge-title').textContent = `🎓 ${challenge.title}`;
         document.getElementById('challenge-lesson').innerHTML = challenge.lesson;
@@ -32,6 +34,7 @@ async function loadChallenge(challengeId) {
         currentChallengeId = challengeId;
     } catch (error) {
         console.error('Error loading challenge:', error);
+        document.getElementById('challenge-lesson').innerHTML = `<p style="color: red;">Error loading challenge: ${error.message}</p>`;
     }
 }
 
