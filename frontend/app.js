@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function loadChallenge(challengeId) {
     try {
-        const response = await fetch(`http://localhost:8000/api/challenge/${challengeId}`);
+        const response = await fetch(`https://py-ghost-site.onrender.com/api/challenge/${challengeId}`);
         const challenge = await response.json();
         
         if (challenge.error) {
@@ -46,7 +46,7 @@ async function runCode() {
     outputBox.textContent = 'Executing...';
     
     try {
-        const response = await fetch('http://localhost:8000/api/execute', {
+        const response = await fetch('https://py-ghost-site.onrender.com/api/execute', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
@@ -86,7 +86,7 @@ async function runCode() {
             outputBox.textContent = `Error: ${data.error}`;
         }
     } catch (error) {
-        outputBox.textContent = `Connection Error: ${error.message}\n\nMake sure the backend is running on http://localhost:8000`;
+        outputBox.textContent = `Connection Error: ${error.message}\n\nMake sure the backend is running on https://py-ghost-site.onrender.com`;
     }
     
     button.disabled = false;
